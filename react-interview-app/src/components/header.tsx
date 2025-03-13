@@ -24,17 +24,18 @@ import { cn } from "@/lib/utils";
            <nav className="hidden md:flex items-center gap-3">
              <NavigationRoutes />
              {userId && (
-               <NavLink
+                 <NavLink
                  to={"/generate"}
                  className={({ isActive }) =>
                    cn(
-                     "text-base text-neutral-600",
-                     isActive && "text-neutral-900 font-semibold"
+                   "text-base text-neutral-600",
+                   isActive && "text-neutral-900 font-semibold",
+                   "hover:text-emerald-400 hover:rounded-lg hover:bg-emerald-50 hover:shadow-md p-2 rounded-lg"
                    )
                  }
-               >
+                 >
                  Take An Interview
-               </NavLink>
+                 </NavLink>
              )}
            </nav>
  

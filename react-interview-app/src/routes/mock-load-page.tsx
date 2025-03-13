@@ -82,7 +82,7 @@ export const MockLoadPage = () => {
             <br />
             <br />
             <span className="font-medium">Note:</span> Your video is{" "}
-            <strong>never recorded</strong>. You can disable your webcam at any
+            never recorded. You can disable your webcam at any
             time.
           </AlertDescription>
         </div>

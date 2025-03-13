@@ -12,21 +12,21 @@ import { Sparkles } from "lucide-react";
        <Container>
          <div className="my-8">
            <h2 className="text-3xl text-center md:text-left md:text-6xl">
-             <span className=" text-outline font-extrabold md:text-8xl">
+             <span className="bg-gradient-to-r from-green-400 via-teal-500 to-emerald-500 bg-clip-text text-transparent font-extrabold md:text-8xl">
                AI Superpower
              </span>
              <span className="text-gray-500 font-extrabold">
                - A better way to
              </span>
              <br />
-             improve your interview chances and skills
+             improve your interview chances and skills.
            </h2>
  
-           <p className="mt-4 text-muted-foreground text-sm">
+             <p className="mt-4 text-lg text-gray-700 text-center md:text-left leading-relaxed">
              Boost your interview skills and increase your success rate with
-             AI-driven insights. Discover a smarter way to prepare, practice, and
-             stand out.
-           </p>
+             <span className="text-emerald-600 font-semibold"> AI-driven insights.</span> 
+             Discover a smarter way to prepare, practice, and stand out.
+             </p>
          </div>
  
          <div className="flex w-full items-center justify-evenly md:px-12 md:py-16 md:items-center md:justify-end gap-12">
@@ -45,13 +45,12 @@ import { Sparkles } from "lucide-react";
          </div>
  
          {/* image section */}
-         <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative">
+         <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative group">
            <img
-             src="/assets/img/hero.jpg"
-             alt=""
-             className="w-full h-full object-cover"
+           src="/assets/img/hero.jpg"
+           alt=""
+           className="w-full h-full object-cover transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-105"
            />
- 
            <div className="absolute top-4 left-4 px-4 py-2 rounded-md bg-white/40 backdrop-blur-md">
              Inteviews Copilot&copy;
            </div>
@@ -59,8 +58,7 @@ import { Sparkles } from "lucide-react";
            <div className="hidden md:block absolute w-80 bottom-4 right-4 px-4 py-2 rounded-md bg-white/60 backdrop-blur-md">
              <h2 className="text-neutral-800 font-semibold">Developer</h2>
              <p className="text-sm text-neutral-500">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-               distinctio natus, quos voluptatibus magni sapiente.
+             Boost your interview skills and increase your success rate with AI-driven insights. Discover a smarter way to prepare, practice, and stand out.
              </p>
  
              <Button className="mt-3">
@@ -92,11 +90,11 @@ import { Sparkles } from "lucide-react";
  
          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
            <div className="col-span-1 md:col-span-3">
-             <img
-               src="/assets/img/office.jpg"
-               alt=""
-               className="w-full max-h-96 rounded-md object-cover"
-             />
+           <img
+             src="/assets/img/office.jpg"
+             alt=""
+             className="w-full max-h-96 rounded-md object-cover transition-transform duration-500 hover:scale-105 hover:rotate-3"
+           />
            </div>
  
            <div className="col-span-1 md:col-span-2 gap-8 max-h-96 min-h-96 w-full flex flex-col items-center justify-center text-center">
