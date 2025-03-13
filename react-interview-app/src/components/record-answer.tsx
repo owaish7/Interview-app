@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import { useAuth } from "@clerk/clerk-react";
 import {
   CircleStop,
@@ -171,7 +171,7 @@ export const RecordAnswer = ({
       } else {
         // save the user answer
 
-        const questionAnswerRef = await addDoc(collection(db, "userAnswers"), {
+        await addDoc(collection(db, "userAnswers"), {
           mockIdRef: interviewId,
           question: question.question,
           correct_ans: question.answer,
